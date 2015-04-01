@@ -45,7 +45,7 @@ int main(int argc, char** argv) {
         do{
             doorOpn=rand()%3+1;
         }while(door==doorOpn||prize==doorOpn);//Can't be the same
-        //Swap the doors if given the opportunity
+        //Swap the doors if that was your choice, try the other and compare
         if(stay!='S'&&stay!='s'){//Use DeMorgan's laws to test validity
               //What is the other door, meaning the door not chosen 
               do{
