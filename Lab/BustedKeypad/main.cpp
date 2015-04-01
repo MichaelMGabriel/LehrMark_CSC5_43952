@@ -29,9 +29,9 @@ int main(int argc, char** argv) {
     for(int t100=0;t100<=9;t100++){
         for(int t10=0;t10<=9;t10++){
             for(int t1=0;t1<=9;t1++){
-                if(t100==1||t10==1||t1==1)continue;
-                if(t100==4||t10==4||t1==4)continue;
-                if(t100==7||t10==7||t1==7)continue;
+                if(t100==1||t10==1||t1==1)continue;//skip
+                if(t100==4||t10==4||t1==4)continue;//skip
+                if(t100==7||t10==7||t1==7)continue;//skip
                 posSet++;//How many temperature settings are possible
                 unsigned int tloop=t100*100+t10*10+t1;//What is this setting
                 unsigned int tdiffA=tloop-temp;//Temp diff on high side
