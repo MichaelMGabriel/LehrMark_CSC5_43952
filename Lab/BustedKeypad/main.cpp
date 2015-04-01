@@ -36,8 +36,8 @@ int main(int argc, char** argv) {
                 unsigned int tloop=t100*100+t10*10+t1;//What is this setting
                 unsigned int tdiffA=tloop-temp;//Temp diff on high side
                 unsigned int tdiffB=temp-tloop;//Temp diff on low side
-                if((tdiffA>=0)&&(tdiffA<(tAbove-temp)))tAbove=tloop;
-                if((tdiffB>=0)&&(tdiffB<(temp-tBelow)))tBelow=tloop;
+                if((tdiffA>=0)&&(tdiffA<(tAbove-temp)))tAbove=tloop;//Swap for closest high side
+                if((tdiffB>=0)&&(tdiffB<(temp-tBelow)))tBelow=tloop;//Swap for closest low side
             }
         }
     }
