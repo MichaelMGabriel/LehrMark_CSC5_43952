@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
     //Prompt the user
     cout<<"Input a temperature from 0 to 999"<<endl;
     cout<<"Keys 1,4,and 7 don't work"<<endl;
-    cout<<"Type in the desired temp and closes temps are displayed"<<endl;
+    cout<<"Type in the desired temp and then closest temps are displayed"<<endl;
     cin>>temp;
     //Exhaust Possible temperature choices
     for(int t100=0;t100<=9;t100++){
@@ -32,10 +32,10 @@ int main(int argc, char** argv) {
                 if(t100==1||t10==1||t1==1)continue;
                 if(t100==4||t10==4||t1==4)continue;
                 if(t100==7||t10==7||t1==7)continue;
-                posSet++;
-                unsigned int tloop=t100*100+t10*10+t1;
-                unsigned int tdiffA=tloop-temp;
-                unsigned int tdiffB=temp-tloop;
+                posSet++;//How many temperature settings are possible
+                unsigned int tloop=t100*100+t10*10+t1;//What is this setting
+                unsigned int tdiffA=tloop-temp;//Temp diff on high side
+                unsigned int tdiffB=temp-tloop;//Temp diff on low side
                 if((tdiffA>=0)&&(tdiffA<(tAbove-temp)))tAbove=tloop;
                 if((tdiffB>=0)&&(tdiffB<(temp-tBelow)))tBelow=tloop;
             }
