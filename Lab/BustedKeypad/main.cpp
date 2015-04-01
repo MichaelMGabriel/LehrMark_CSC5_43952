@@ -22,6 +22,8 @@ int main(int argc, char** argv) {
     unsigned short tAbove=999,tBelow=0,temp,posSet=0;
     //Prompt the user
     cout<<"Input a temperature from 0 to 999"<<endl;
+    cout<<"Keys 1,4,and 7 don't work"<<endl;
+    cout<<"Type in the desired temp and closes temps are displayed"<<endl;
     cin>>temp;
     //Exhaust Possible temperature choices
     for(int t100=0;t100<=9;t100++){
@@ -41,8 +43,8 @@ int main(int argc, char** argv) {
     }
     //Output the range of temperature settings
     cout<<"The input temperature = "<<temp<<" degrees"<<endl;
-    cout<<"The temp on the high side = "<<tAbove<<" degrees"<<endl;
-    cout<<"The temp on the  low side = "<<tBelow<<" degrees"<<endl;
+    cout<<"The closest temp on the high side = "<<tAbove<<" degrees"<<endl;
+    cout<<"The closest temp on the  low side = "<<tBelow<<" degrees"<<endl;
     cout<<"There are a total of "<<posSet<<" temperature settings"<<endl;
     //Exit stage right
     return 0;
