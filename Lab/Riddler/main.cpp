@@ -18,10 +18,10 @@ using namespace std;
 //Execution Begins here!
 int main(int argc, char** argv) {
     //Loop for all possible digits
-    for(int d1000=0;d1000<=9;d1000++){
-       for(int d100=0;d100<=9;d100++){
-          for(int d10=0;d10<=9;d10++){
-             for(int d1=0;d1<=9;d1++){
+    for(int d1000=0;d1000<=9;d1000++){//1000's digit
+       for(int d100=0;d100<=9;d100++){//100's  digit
+          for(int d10=0;d10<=9;d10++){//10's   digit
+             for(int d1=0;d1<=9;d1++){//1's    digit
                  if((d1000==3*d10) && 
                     (d1%2==1   )  &&
                     ((d1000+d100+d10+d1)==27)&&
@@ -33,6 +33,6 @@ int main(int argc, char** argv) {
           }
        }
     }
-
+    //Exit stage right
     return 0;
 }
