@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: Dr. Mark E. Lehr
- * Created on March 30, 2015, 10:17 AM
+ * Created on April 1, 2015, 10:17 AM
  * Purpose:  Play the Monty Hall Game
  *           Analyze staying with your first door choice or
  *           changing to the other door
